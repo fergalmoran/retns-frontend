@@ -1,0 +1,9 @@
+<p [innerHTML]="data$ | async"
+   *ngIf="!this.errorText">
+</p>
+
+<div class="alert alert-danger"
+     role="alert"
+     *ngIf="this.errorText">
+    {{this.errorText}}
+</div>
